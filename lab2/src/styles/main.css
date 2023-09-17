@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  font-size: 62.5%;
+
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-150: #e5e7eb97;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  --color-gray-950: #030712;
+
+  --color-yellow-50: #fef3c9;
+  --color-yellow-100: #fdefb5;
+  --color-yellow-200: #fde68d;
+  --color-yellow-300: #fcdd65;
+  --color-yellow-400: #fbd53d;
+  --color-yellow-500: #facc15;
+  --color-yellow-600: #d2a904;
+  --color-yellow-700: #9b7d03;
+  --color-yellow-800: #655102;
+  --color-yellow-900: #2e2501;
+  --color-yellow-950: #120f00;
+
+  --color-blue-50: #ebf2fe;
+  --color-blue-100: #d7e6fd;
+  --color-blue-200: #b0cdfb;
+  --color-blue-300: #89b4fa;
+  --color-blue-400: #629bf8;
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #0b61ee;
+  --color-blue-700: #084bb8;
+  --color-blue-800: #063583;
+  --color-blue-900: #041f4d;
+  --color-blue-950: #021532;
+
+  --color-green-50: #aef1c6;
+  --color-green-100: #9ceeba;
+  --color-green-200: #79e8a2;
+  --color-green-300: #57e28a;
+  --color-green-400: #34dc72;
+  --color-green-500: #22c55e;
+  --color-green-600: #1a9547;
+  --color-green-700: #116530;
+  --color-green-800: #09351a;
+  --color-green-900: #010603;
+  --color-green-950: #000000;
+
+  --color-red-50: #fdeded;
+  --color-red-100: #fcdada;
+  --color-red-200: #f9b5b5;
+  --color-red-300: #f58f8f;
+  --color-red-400: #f26a6a;
+  --color-red-500: #ef4444;
+  --color-red-600: #e71414;
+  --color-red-700: #b30f0f;
+  --color-red-800: #800b0b;
+  --color-red-900: #4c0707;
+  --color-red-950: #320404;
+
+  --color-white: #fff;
+  --color-black: #000;
+
+  --border: 2px solid var(--color-black);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--color-gray-50);
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+
+/* COMPONENTS */
+
+/* BUTTON */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+
+  padding: 0.6rem 1.6rem;
+  appearance: none;
+  background-color: var(--color-blue-500);
+  color: var(--color-white);
+  font: inherit;
+  font-size: 1.4rem;
+
+  border: 2px solid var(--color-blue-700);
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--color-blue-400);
+}
+
+.btn:active {
+  background-color: var(--color-blue-600);
+}
+
+.btn:focus {
+  outline: 3px solid var(--color-blue-800);
+}
+
+.btn.btn--secondary {
+  background-color: var(--color-gray-500);
+  border: 2px solid var(--color-gray-700);
+  color: var(--color-white);
+}
+
+.btn.btn--secondary:hover {
+  background-color: var(--color-gray-400);
+}
+
+.btn.btn--secondary:active {
+  background-color: var(--color-gray-600);
+}
+
+.btn.btn--secondary:focus {
+  outline: 3px solid var(--color-gray-800);
+}
+
+.btn.btn--warning {
+  background-color: var(--color-yellow-400);
+  border: 2px solid var(--color-yellow-600);
+  color: var(--color-white);
+}
+
+.btn.btn--warning:hover {
+  background-color: var(--color-yellow-200);
+}
+
+.btn.btn--warning:active {
+  background-color: var(--color-yellow-500);
+}
+
+.btn.btn-warning:focus {
+  outline: 3px solid var(--color-yellow-800);
+}
+
+.btn.btn--danger {
+  background-color: var(--color-red-500);
+  border: 2px solid var(--color-red-700);
+  color: var(--color-white);
+}
+
+.btn.btn--danger:hover {
+  background-color: var(--color-red-400);
+}
+
+.btn.btn--danger:active {
+  background-color: var(--color-red-600);
+}
+
+.btn.btn--danger:focus {
+  outline: 3px solid var(--color-red-800);
+}
+
+/* CARD */
+.card {
+  padding: 2rem;
+  background-color: var(--color-white);
+  border-radius: 1.3rem;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* GENERAL */
+
+.syntax-keyword {
+  color: var(--color-red-600);
+}
+
+/* UTILITIES */
+.active-link {
+  font-weight: 600 !important;
+  color: var(--color-blue-950) !important;
+  text-decoration: underline !important;
+}
+
