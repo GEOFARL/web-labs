@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fourth Lab</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div class="header">
+        <div class="container">
+          <header class="header__content">
+            <div class="header__logo-container">
+              <img src="./assets/logo-placeholder.png" alt="logo" />
+            </div>
+            <nav class="navigation">
+              <div class="navigation__open-btn-container">
+                <button
+                  class="navigation__btn"
+                  onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                  aria-label="Main Menu"
+                >
+                  <svg viewBox="0 0 100 100">
+                    <path
+                      class="navigation__btn-line navigation__btn-line1"
+                      d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+                    />
+                    <path
+                      class="navigation__btn-line navigation__btn-line2"
+                      d="M 20,50 H 80"
+                    />
+                    <path
+                      class="navigation__btn-line navigation__btn-line3"
+                      d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </nav>
+          </header>
+        </div>
+      </div>
+      <div class="container">
+        <section class="pictures">
+          <div class="img-container">
+            <img src="./assets/smiling-woman.jpg" alt="smiling woman" />
+          </div>
+          <div class="img-container">
+            <img src="./assets/two-women-speaking.jpg" alt="smiling woman" />
+          </div>
+          <div class="img-container">
+            <img src="./assets/two-women-working.jpg" alt="smiling woman" />
+          </div>
+          <div class="img-container">
+            <img src="./assets/woman-with-laptop.jpg" alt="smiling woman" />
+          </div>
+        </section>
+      </div>
+      <div class="container">
+        <section class="cards">
+          <div class="card">
+            <div class="card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M19.864 8.465a3.505 3.505 0 0 0-3.03-4.449A3.005 3.005 0 0 0 14 2a2.98 2.98 0 0 0-2 .78A2.98 2.98 0 0 0 10 2c-1.301 0-2.41.831-2.825 2.015a3.505 3.505 0 0 0-3.039 4.45A4.028 4.028 0 0 0 2 12c0 1.075.428 2.086 1.172 2.832A4.067 4.067 0 0 0 3 16c0 1.957 1.412 3.59 3.306 3.934A3.515 3.515 0 0 0 9.5 22c.979 0 1.864-.407 2.5-1.059A3.484 3.484 0 0 0 14.5 22a3.51 3.51 0 0 0 3.19-2.06 4.006 4.006 0 0 0 3.138-5.108A4.003 4.003 0 0 0 22 12a4.028 4.028 0 0 0-2.136-3.535zM9.5 20c-.711 0-1.33-.504-1.47-1.198L7.818 18H7c-1.103 0-2-.897-2-2 0-.352.085-.682.253-.981l.456-.816-.784-.51A2.019 2.019 0 0 1 4 12c0-.977.723-1.824 1.682-1.972l1.693-.26-1.059-1.346a1.502 1.502 0 0 1 1.498-2.39L9 6.207V5a1 1 0 0 1 2 0v13.5c0 .827-.673 1.5-1.5 1.5zm9.575-6.308-.784.51.456.816c.168.3.253.63.253.982 0 1.103-.897 2-2.05 2h-.818l-.162.802A1.502 1.502 0 0 1 14.5 20c-.827 0-1.5-.673-1.5-1.5V5c0-.552.448-1 1-1s1 .448 1 1.05v1.207l1.186-.225a1.502 1.502 0 0 1 1.498 2.39l-1.059 1.347 1.693.26A2.002 2.002 0 0 1 20 12c0 .683-.346 1.315-.925 1.692z"
+                ></path>
+              </svg>
+            </div>
+            <h4 class="card__heading">How we teach</h4>
+            <p class="card__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              velit architecto fugiat porro facere veniam ducimus dolore ullam
+              dicta dolor?
+            </p>
+            <a href="#" class="card__link">MORE</a>
+
+            <div class="card__block"></div>
+          </div>
+          <div class="card">
+            <div class="card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 22c3.859 0 7-3.141 7-7s-3.141-7-7-7c-3.86 0-7 3.141-7 7s3.14 7 7 7zm0-12c2.757 0 5 2.243 5 5s-2.243 5-5 5-5-2.243-5-5 2.243-5 5-5zm-1-8H7v5.518a8.957 8.957 0 0 1 4-1.459V2zm6 0h-4v4.059a8.957 8.957 0 0 1 4 1.459V2z"
+                ></path>
+                <path
+                  d="m10.019 15.811-.468 2.726L12 17.25l2.449 1.287-.468-2.726 1.982-1.932-2.738-.398L12 11l-1.225 2.481-2.738.398z"
+                ></path>
+              </svg>
+            </div>
+            <h4 class="card__heading">Results</h4>
+            <p class="card__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              velit architecto fugiat porro facere veniam ducimus dolore ullam
+              dicta dolor?
+            </p>
+            <a href="#" class="card__link">MORE</a>
+            <div class="card__block"></div>
+          </div>
+          <div class="card">
+            <div class="card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M2 7v1l11 4 9-4V7L11 4z"></path>
+                <path
+                  d="M4 11v4.267c0 1.621 4.001 3.893 9 3.734 4-.126 6.586-1.972 7-3.467.024-.089.037-.178.037-.268V11L13 14l-5-1.667v3.213l-1-.364V12l-3-1z"
+                ></path>
+              </svg>
+            </div>
+            <h4 class="card__heading">Top courses</h4>
+            <p class="card__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              velit architecto fugiat porro facere veniam ducimus dolore ullam
+              dicta dolor?
+            </p>
+            <a href="#" class="card__link">MORE</a>
+            <div class="card__block"></div>
+          </div>
+          <div class="card">
+            <div class="card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.486 2 2 6.486 2 12v4.143C2 17.167 2.897 18 4 18h1a1 1 0 0 0 1-1v-5.143a1 1 0 0 0-1-1h-.908C4.648 6.987 7.978 4 12 4s7.352 2.987 7.908 6.857H19a1 1 0 0 0-1 1V18c0 1.103-.897 2-2 2h-2v-1h-4v3h6c2.206 0 4-1.794 4-4 1.103 0 2-.833 2-1.857V12c0-5.514-4.486-10-10-10z"
+                ></path>
+              </svg>
+            </div>
+            <h4 class="card__heading">Support</h4>
+            <p class="card__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              velit architecto fugiat porro facere veniam ducimus dolore ullam
+              dicta dolor?
+            </p>
+            <a href="#" class="card__link">MORE</a>
+            <div class="card__block"></div>
+          </div>
+        </section>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <footer class="footer__content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              distinctio error doloremque placeat
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <div class="backgrounds">
+      <div class="yellow-bg"></div>
+      <div class="blue-bg"></div>
+    </div>
+  </body>
+</html>
