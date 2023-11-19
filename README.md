@@ -10,3 +10,4 @@
 - Sixth lab
   - [Creation page](http://weblab6php.free.nf/index.html)
   - [Tabs page](http://weblab6php.free.nf/)
+- [Seventh lab](http://weblab7php.infinityfreeapp.com/)
